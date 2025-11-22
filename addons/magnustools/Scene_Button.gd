@@ -15,4 +15,4 @@ func _enter_tree():
 
 func clicked():
 	print(name + " changed the scene to: " + Scene)
-	get_tree().change_scene_to_file(Scene)
+	MagnusTools.change_scene(Scene,save)
