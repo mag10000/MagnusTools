@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpybokr0nl6bo"]
+
+[ext_resource type="Script" uid="uid://bsd7uojxabgbq" path="res://addons/magnustools/Scene_Button.gd" id="1_edhe3"]
+
+[node name="testing" type="Node2D"]
+
+[node name="Scene Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_edhe3")
+Scene = Object(GDScriptNativeClass,"script":null)
+
+metadata/_custom_type_script = "uid://bsd7uojxabgbq"

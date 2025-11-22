@@ -4,19 +4,16 @@ extends EditorPlugin
 
 func _enable_plugin():
 	# Add autoloads here.
-	pass
+	add_autoload_singleton("MagnusTools", "res://addons/magnustools/MagnusToolsAutoload.gd")
 
 
 func _disable_plugin():
 	# Remove autoloads here.
-	pass
+	remove_autoload_singleton("MagnusTools")
 
 
 func _enter_tree():
-	# Initialization of the plugin goes here.
-	pass
-
+	add_custom_type("Scene Button", "Button", preload("Scene_Button.gd"),preload("Scene_Button_Texture.png"))
 
 func _exit_tree():
-	# Clean-up of the plugin goes here.
-	pass
+	remove_custom_type("Scene Button")
